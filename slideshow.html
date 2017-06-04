@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Slideshpw</title>
+<meta charset="utf-8">
+<meta name="description" content="Slideshpw">
+<meta name="author" content="Henry Trowbridge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.slides {
+  display: none;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+body {  
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="center">
+<!-- Begin Slideshow (Carousel) -->
+<img alt="Slide 1" class="slides fade" src="img/s_1.png">
+<img alt="Slide 2" class="slides fade" src="img/s_2.png">
+<img alt="Slide 3" class="slides fade" src="img/s_3.png">
+<img alt="Slide 4" class="slides fade" src="img/s_4.png">
+<img alt="Slide 5" class="slides fade" src="img/s_5.png">
+<img alt="Slide 6" class="slides fade" src="img/s_6.png">
+<img alt="Slide 7" class="slides fade" src="img/s_7.png">
+<img alt="Slide 8" class="slides fade" src="img/s_8.png">
+<img alt="Slide 9" class="slides fade" src="img/s_9.png">
+<img alt="Slide 10" class="slides fade" src="img/s_10.png">
+<img alt="Slide 11" class="slides fade" src="img/s_11.png">
+<img alt="Slide 12" class="slides fade" src="img/s_12.png">
+<script>
+// Automatic Slideshow - change image every 16 seconds - a 4 second fade animation
+var Slides = 0;
+loop();
+
+function loop() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    Slides++;
+    if (Slides > x.length) {Slides = 1}
+    x[Slides-1].style.display = "inline-block";
+    setTimeout(loop, 16000);
+}
+</script>
+<!-- End Slideshow -->
+<br>
+</div>
+</body>
+</html>
