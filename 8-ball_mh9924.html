@@ -59,9 +59,34 @@ button:hover {
 <h2 class="h2" id="response">Click "Get Answer!", your answer will appear here.</h2>
 <script>
 function response() {
-    "use strict";
-    var responses = ["Signs point to yes.", "Yes.", "Reply hazy, try again.", "Without a doubt.", "My sources say no.", "As I see it, yes.", "You may rely on it.", "Concentrate and ask again.", "Outlook not so good.", "It is decidedly so.", "Better not tell you now.", "Very doubtful.", "Yes - definitely.", "It is certain.", "Cannot predict now.", "Most likely.", "Ask again later.", "My reply is no.", "Outlook good.", "Don't count on it."];
-    document.getElementById("response").innerHTML = responses[Math.floor(Math.random()*responses.length)];
+    var yesresponses = ["Signs point to yes.", 
+                        "Yes.",
+                        "Without a doubt.",
+                        "You may rely on it.",
+                        "As I see it, yes.", 
+                        "It is decidedly so.", 
+                        "Yes - definitely.",
+                        "It is certain.", 
+                        "Most likely.", 
+                        "Outlook good."];
+    var noresponses = ["My sources say no.",
+                       "Very doubtful.", 
+                       "My reply is no.", 
+                       "Don't count on it.",
+                       "Outlook not so good."];
+    var mayresponses = ["Concentrate and ask again.",
+                        "Better not tell you now.", 
+                        "Cannot predict now.",
+                        "Reply hazy, try again.",
+                        "Ask again later."];
+    var responses = [yesresponses, noresponses, mayresponses];
+    var answer = Math.floor(Math.random() * 3);
+    document.getElementById("response").innerHTML = responses[answer][Math.floor(Math.random()*responses[answer].length)];
+    if (answer == 0){ var color = "green"; }
+    else if (answer == 1){ var color = "red"; }
+    else if (answer == 2){ var color = "yellow"; }
+    document.getElementById("response").setAttribute("class", color);
+    
 }
 </script>
 </body>
