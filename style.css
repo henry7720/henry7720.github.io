@@ -5,3 +5,11 @@ body {
   background-color: #000;
   color: #00FA00;
 }
+
+a {
+  color: #00FA00;
+}
+
+a:visited {
+  color: #FFF;
+}
