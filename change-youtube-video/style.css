@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
+
+body {
+  text-align: center;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  iframe, body {
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+iframe {
+  border: 0;
+  width: 600px;
+  height: 338px;
+}
+
+.id {
+  background-color: #ff0;
+}
+
+code {
+  background-color: #dcdcdc;
+  border-radius: 4px;
+  font-family: 'consolas', courier, monospace;
+  padding: 0 2px;
+}
