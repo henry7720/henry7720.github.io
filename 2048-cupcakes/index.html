@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <title>2048 Cupcakes</title>
-
+  <meta charset="utf-8">
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
@@ -15,6 +14,15 @@
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111005091-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111005091-1');
+  </script>
 </head>
 <body>
   <div class="container">
@@ -73,7 +81,7 @@
     </div>
 
     <p class="game-explanation"><strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two of the same cupcake tiles touch, they <strong>merge into one!</strong></p>
-    <!--<hr> -->
+    <!-- <hr> -->
     <p>This version was inspired by <a href="https://git.io/2048">2048</a> and <a href="http://videogamecentral.org/test/" target="_blank">Video Game Central.org</a>.</p>
    </div>
 
