@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  background-color: #000000;
+  font-size: 60pt;
+  font-weight: 700;
+}
+
+p, img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  pointer-events: none;
+}
+
+img {
+  cursor: pointer;
+}
+/* Color palette of cookie: #B48C54 #9C8C6C #946434 #542C2C #C4A46C */
