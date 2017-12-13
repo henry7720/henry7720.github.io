@@ -675,6 +675,12 @@ hr {
     margin-top: 50px;
 }
 
+.github-ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 520px) {
     html,
     body {
