@@ -681,6 +681,12 @@ hr {
     right: 0;
 }
 
+@media screen and (max-width: 640px;) {
+    .github-ribbon {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 520px) {
     html,
     body {
@@ -936,8 +942,5 @@ hr {
     }
     .game-message .lower {
         margin-top: 30px !important;
-    }
-    .github-ribbon {
-        display: none;
     }
 }
