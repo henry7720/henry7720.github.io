@@ -11,7 +11,7 @@ body {
 @media screen and (max-width: 400px) {
   img {
     width: 90vw;
-    height: 90vh;
+    height: auto;
   }
 }
 
