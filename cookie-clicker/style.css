@@ -22,5 +22,9 @@ p {
 
 img {
   cursor: pointer;
+  width: 400;
+  height: 400;
+  max-width: 90vw;
+  max-height: 90vh;
 }
 /* Color palette of cookie: #B48C54 #9C8C6C #946434 #542C2C #C4A46C */
