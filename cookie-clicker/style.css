@@ -10,8 +10,8 @@ body {
 
 @media screen and (max-width: 400px) {
   img {
-    max-width: 90vw;
-    height: auto;
+    width: 90vw;
+    height: 90vh;
   }
 }
 
