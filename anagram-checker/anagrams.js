@@ -2,20 +2,21 @@ var out = document.getElementById("output");
 var box1 = document.getElementById("word1textbox");
 var box2 = document.getElementById("word2textbox");
 
+function getLetterCount(word) {
+  // Returns an array.
+  var wordlettercount = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  // var wordlettercount = new Array(26).fill(0);
+  word = word.toLowerCase();
+  for (var i = 0; i < word.length; i++) {
+    if (word.charCodeAt(i) >= 97 && word.charCodeAt(i) <= 122) wordlettercount[word.charCodeAt(i) - 97]++;
+  }
+  return wordlettercount;
+}
+
 function isAnagram(word1, word2) {
   // Returns a boolean.
   if (getLetterCount(word1).toString() == getLetterCount(word2).toString()) return true;
   return false;
-}
-
-function getLetterCount(word) {
-  // Returns an array.
-  word = word.toLowerCase();
-  var wordlettercount = new Array(26).fill(0);
-  for (var i = 0; i < word.length; i++){
-    if (word.charCodeAt(i) >= 97 && word.charCodeAt(i) <= 122) wordlettercount[word.charCodeAt(i) - 97]++;
-  }
-  return wordlettercount;
 }
 
 function getAnagramResult(word1, word2) {

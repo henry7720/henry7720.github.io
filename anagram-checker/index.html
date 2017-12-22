@@ -8,14 +8,14 @@
   </head>
   <body>
     <h1>Check If Two Words Are Anagrams!</h1>
-    <p>This is an <b>English only</b> anagram checker! For it to work, only the <b>ASCII English Alphabet</b> is allowed.</p>
+    <p>This is an <b>English</b> anagram checker! For it to work properly, only the <b>English Alphabet</b> is allowed. No numbers or punctuation.</p>
     <label for="word1textbox">Word 1: </label>
     <input type="text" maxlength="255" id="word1textbox" onkeypress="return event.charCode >= 97 && event.charCode <= 122 || event.charCode >= 65 && event.charCode <= 90 || event.charCode == 32">
     <br>
     <label for="word2textbox">Word 2: </label>
     <input type="text" maxlength="255" id="word2textbox" onkeypress="return event.charCode >= 97 && event.charCode <= 122 || event.charCode >= 65 && event.charCode <= 90 || event.charCode == 32">
     <br>
-    <input type="submit" onclick="getAnagramResult(box1.value, box2.value)">
+    <input type="submit" value="Check!" onclick="getAnagramResult(box1.value, box2.value)">
     <p id="output">One (or both) of the textboxes are empty!</p>
     <script src="anagrams.js" type="text/javascript"></script>
   </body>
