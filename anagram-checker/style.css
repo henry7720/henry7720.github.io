@@ -4,9 +4,11 @@ input[type="submit"], input[type="submit"]:hover {
   color: #00FA00;
   background-color: #000;
   cursor: pointer;
+  border-color: #00FA00;
 }
 
 input[type="text"] {
   color: #00FA00;
   background-color: #000;
+  border-color: #00FA00;
 }
