@@ -1,5 +1,12 @@
 @import url("/main.css");
 
 input[type="submit"], input[type="submit"]:hover {
+  color: #00FA00;
+  background-color: #000;
   cursor: pointer;
+}
+
+input[type="text"] {
+  color: #00FA00;
+  background-color: #000;
 }
