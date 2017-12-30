@@ -14,6 +14,7 @@ function setVid(id) {
     alert("The developer made a mistake in the code!\nContact him about the issue at henry.trowbridge2@gmail.com.");
   }
   else {
+    inp.value = id;
     out.src = base + id + params;
   }
 }
