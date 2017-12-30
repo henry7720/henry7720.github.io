@@ -1,20 +1,3 @@
-@import url("/main.css");
-
-input[type="submit"] {
-  color: #00FA00;
-  background-color: #000;
+input[type="submit"], input[type="submit"]:hover {
   cursor: pointer;
-  border-color: #00FA00;
-}
-
-input[type="submit"]:hover {
-  color: #000;
-  background-color: #00FA00;
-  border-color: #00FA00;
-}
-
-input[type="text"] {
-  color: #00FA00;
-  background-color: #000;
-  border-color: #00FA00;
 }
