@@ -27,6 +27,6 @@ function getAnagramResult(word1, word2) {
     out.textContent = "One (or both) of the textboxes are empty!";
     return;
   }
-  if (isAnagram(word1, word2)) out.textContent = "Yep, \"" + word1 + "\" and \"" + word2 + "\" are anagrams!";
-  else out.textContent = "Nope, \"" + word1 + "\" and \"" + word2 + "\" are not anagrams.";
+  if (isAnagram(word1, word2)) out.textContent = `Yep, "${word1}" and "${word2}" are anagrams!`;
+  else out.textContent = `Nope, "${word1}" and "${word2}" are not anagrams.`;
 }
