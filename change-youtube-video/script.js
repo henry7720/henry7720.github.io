@@ -19,11 +19,6 @@ function setVid(id) {
   }
 }
 
-function showVidId() {
-  document.getElementById("showtutorial").style.display = "none";
-  document.getElementById("tutorial").style.display = "block";
-}
-
 /* Old functions
 function setVid(id) {
   if (id.length != 11) {
