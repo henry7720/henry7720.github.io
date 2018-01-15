@@ -19,14 +19,3 @@ iframe {
   width: 100%;
   height: 100%;
 }
-
-.id {
-  background-color: #ff0;
-}
-
-code {
-  background-color: #dcdcdc;
-  border-radius: 4px;
-  font-family: 'consolas', courier, monospace;
-  padding: 0 2px;
-}
