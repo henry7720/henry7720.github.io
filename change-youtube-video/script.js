@@ -18,8 +18,8 @@ function setVid(youTubeUrlOrId) {
   if (!getYouTubeVideoId(youTubeUrlOrId)) {
     if (youTubeUrlOrId.length == 11) out.src = base + youTubeUrlOrId + params;
     else {
-        alert("Your input is not a valid YouTube video URL or ID!");
-        out.src = base + "4fWyzwo1xg0" + params;
+      alert("Your input is not a valid YouTube video URL or ID!");
+      out.src = base + "4fWyzwo1xg0" + params;
     }
   }
   else out.src = base + getYouTubeVideoId(youTubeUrlOrId) + params;
