@@ -3,6 +3,11 @@ const params = "?autoplay=1&rel=0&modestbranding=1";
 var outputVideo = document.getElementById("youtube-player");
 var inputForm = document.getElementById("input-form");
 
+inputForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+  setVid(inputForm.value);
+});
+                           
 function getVideoId(url) {
   try { var url = new URL(url); }
   catch (err) { return false; }
