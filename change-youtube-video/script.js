@@ -2,10 +2,11 @@ const base = "https://www.youtube.com/embed/";
 const params = "?autoplay=1&rel=0&modestbranding=1";
 var outputVideo = document.getElementById("youtube-player");
 var inputForm = document.getElementById("input-form");
+var textInput = document.getElementById("text-input");
 
 inputForm.addEventListener("submit", function(e) {
   e.preventDefault();
-  setVid(inputForm.value);
+  setVid(textInput.value);
 });
                            
 function getVideoId(url) {
