@@ -1,6 +1,5 @@
 const base = "https://www.youtube.com/embed/";
 const params = "?autoplay=1&rel=0&modestbranding=1";
-
 var outputVideo = document.getElementById("youtube-player");
 var inputForm = document.getElementById("input-form");
 
@@ -17,11 +16,11 @@ function getVideoId(url) {
 
 function setVid(id) {
   if (!getVideoId(id)) {
-    if (id.length == 11) out.src = base + youTubeUrlOrId + params;
+    if (id.length == 11) outputVideo.src = base + id + params;
     else {
       alert("Your input is not a valid YouTube video URL or ID!");
-      out.src = base + "4fWyzwo1xg0" + params;
+      outputVideo.src = base + "4fWyzwo1xg0" + params;
     }
   }
-  else out.src = base + getVideoId(id) + params;
+  else outputVideo.src = base + getVideoId(id) + params;
 }
